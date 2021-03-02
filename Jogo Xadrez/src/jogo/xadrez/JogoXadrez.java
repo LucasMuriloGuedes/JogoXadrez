@@ -5,6 +5,8 @@
  */
 package jogo.xadrez;
 
+import chess.ChessMatch;
+
 /**
  *
  * @author Lucas Murilo
@@ -17,7 +19,8 @@ public class JogoXadrez {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("hello commit");
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
     
 }
